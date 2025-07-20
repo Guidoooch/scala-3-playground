@@ -99,7 +99,7 @@ object WebCrawlerDemo extends App {
     Thread.sleep(30000)
 
     // Example 2: Domain-restricted crawling
-    println("\n=== Domain-restricted crawling ===")
+    println("=== Domain-restricted crawling ===")
     val domainCrawler = WebCrawler.domainRestricted(Set("example.com", "example.org"))
 
     // Example 3: Custom configuration

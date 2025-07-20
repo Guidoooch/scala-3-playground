@@ -36,7 +36,7 @@ class WebCrawler(config: CrawlConfig)(implicit ec: ExecutionContext) {
       val host   = uri.getHost
 
       scheme != null && (scheme == "http" || scheme == "https") &&
-      host != null && !host.isEmpty &&
+      host != null && host.nonEmpty &&
       !url.contains("#") // Skip fragments
     }.getOrElse(false)
   }

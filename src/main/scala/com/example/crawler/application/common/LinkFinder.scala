@@ -38,6 +38,5 @@ object LinkFinder:
 
               maybeUriToVisit
         }
-        .toSet
 
     pageLinksRelativeToDomain
